@@ -8,7 +8,7 @@ const dm_sans = DM_Sans({
   subsets: ["latin"],
 });
 const dm_serif = DM_Serif_Display({
-  variable: "--font-DM_Sans",
+  variable: "--font-DM_Serif",
   weight: ["400"],
   subsets: ["latin"],
 });
