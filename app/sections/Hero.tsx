@@ -18,7 +18,7 @@ const Hero = () => {
         </h1>
         {/**<Button color="black" /> */}
       </div>
-      <div className="  h-auto  absolute left-1/2 -bottom-36  md:-bottom-10 transform -translate-x-1/2  rounded-3xl z-10 w-[80%] md:w-[80%] ">
+      <div className="  h-auto  absolute left-1/2 -bottom-36  md:-bottom-10 transform -translate-x-1/2  rounded-3xl z-10 w-[80%] 2xl:w-[70%] ">
         <TravelSearch />
       </div>
     </section>

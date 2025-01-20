@@ -17,7 +17,7 @@ export function Bounded({
   return (
     <Comp
       className={clsx(
-        "px-2 md:px-6 mx-auto w-full xl:max-w-6xl max-w-5xl 2xl:max-w-8xl",
+        "px-2 md:px-6 mx-auto w-full max-w-5xl  xl:max-w-7xl  2xl:max-w-8xl",
         className
       )}
       {...restProps}
