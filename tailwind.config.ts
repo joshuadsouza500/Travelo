@@ -16,14 +16,13 @@ export default {
         DM_sans: ["var(--font-DM_Sans)"],
         DM_serif: ["var(--font-DM_Serif)"],
       },
-      backgroundColor: {
-        "background-green": "#D7DFD1",
-        "background-blue": "#DDEEE8",
-      },
+
       colors: {
         background: "hsl(var(--background))",
         "text-black": "#1A1E18",
         "text-light": "#9B9FB1",
+        "background-green": "#D7DFD1",
+        "background-blue": "#DDEEE8",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",

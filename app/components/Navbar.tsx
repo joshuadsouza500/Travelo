@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 //import { useMediaQuery } from "react-responsive";
 
@@ -76,13 +77,13 @@ const NavBar = () => {
         </div>
       </div> */}
       <div className="flex justify-between items-center w-full">
-        <div className="flex   ">
-          {/**   <Image alt="logo" height={20} width={20} src="/window.svg" /> */}
+        <div className="flex   gap-x-1  items-center ">
+          <Image alt="logo" height={20} width={20} src="/Logo.svg" />
           <Link
             href="/"
-            className=" text-background2 text-xl md:text-3xl     font-bold tracking-tight"
+            className=" text-background2 text-xl md:text-2xl     font-medium font-DM_serif tracking-tight"
           >
-            Travelo<span className="text-primary">.</span>
+            Travelo<span className="text-primary ">.</span>
           </Link>
         </div>
 
