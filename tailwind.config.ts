@@ -19,12 +19,11 @@ export default {
       backgroundColor: {
         "background-green": "#D7DFD1",
         "background-blue": "#DDEEE8",
-        "text-black": "#1A1E18",
-        "text-light": "#9B9FB1",
       },
       colors: {
         background: "hsl(var(--background))",
-
+        "text-black": "#1A1E18",
+        "text-light": "#9B9FB1",
         foreground: "hsl(var(--foreground))",
         card: {
           DEFAULT: "hsl(var(--card))",
