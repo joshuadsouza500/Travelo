@@ -3,21 +3,23 @@ import Button from "../components/ui/Button";
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/hero.jpeg')] h-screen  bg-no-repeat bg-center bg-cover relative m-2 rounded-xl ">
+    <section className="bg-[url('/hero.jpeg')] h-[70vh] lg:h-screen  bg-no-repeat bg-center bg-cover relative mx-1 md:mx-2 rounded-xl ">
       {" "}
       {/*Z index only works if the position of the element is not static */}
       <div className="absolute inset-0 rounded-xl bg-black/25 h-full w-full z-0" />
-      <div className=" flex flex-col justify-center items-center  h-full">
-        <div className="backdrop-blur-lg bg-white/25 py-2 px-6 text-white rounded-3xl z-10 w-auto">
+      <div className=" flex flex-col justify-center items-center  h-full gap-y-2 font-DM_serif z-10 relative ">
+        <div className="backdrop-blur-lg bg-white/25 py-1 md:py-2 px-3  md:px-6 text-white/90 rounded-3xl z-10 w-auto lg:-mt-6 max-md:text-xs">
           The Best Place to Start Your Adventure
         </div>
-        <h1 className="font-DM_serif text-white  text-[72px] leading-none text-center  z-10 relative ">
+        <h1 className=" text-white text-4xl md:text-6xl  xl:text-7xl leading-none text-center pb-1  ">
           Escape the Ordinary,
           <br /> Book your Adventure Now
         </h1>
-        <Button color="black" text="Book Now" />
+        {/**<Button color="black" text="Book Now" /> */}
       </div>
-      <div className="backdrop-blur-lg bg-white/30 h-32 absolute left-1/2  -bottom-20 transform -translate-x-1/2  rounded-3xl z-10 w-[90%]"></div>
+      <div className="backdrop-blur-lg bg-white/30 h-64 md:h-32 absolute left-1/2 -bottom-32  md:-bottom-20 transform -translate-x-1/2  rounded-3xl z-10 w-[90%] ">
+        <Button color="black" text="Book Now" className="" />{" "}
+      </div>
     </section>
   );
 };
