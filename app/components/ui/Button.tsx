@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 
 type ButtonProps = {
-  text: string;
+  children: ReactNode;
   className?: string;
   style?: CSSProperties;
   color?: "black" | "white";
@@ -10,7 +10,7 @@ type ButtonProps = {
 
 //if a user passes a prop like onClick or disabled to the Button component, it would be captured by restProps and passed to the underlying button element.
 const Button = ({
-  text,
+  children,
   className,
   color = "black",
   ...restProps
@@ -26,7 +26,7 @@ const Button = ({
       )}
       {...restProps}
     >
-      {text}
+      {children}
     </button>
   );
 };
