@@ -1,10 +1,11 @@
 import React from "react";
 import { Bounded } from "../components/ui/Bounded";
 import TourCarousel from "../components/ui/TourCarousel";
+import Button from "../components/Button";
 
 const Popular = () => {
   return (
-    <div className="h-screen bg-[url('/lines.jpeg')]/10 pt-16    bg-center bg-cover">
+    <div className="h-auto bg-[url('/lines.jpeg')]/10 py-12 md:py-16    bg-center bg-cover">
       <Bounded>
         <div className="w-full flex justify-center md:justify-between items-end pb-4">
           <div className=" space-y-1 max-md:text-center">
@@ -18,9 +19,12 @@ const Popular = () => {
             collection
           </p>
         </div>
-        <section className=" w-full h-auto py-4  lg:py-16 px-4 lg:px-8 ">
+        <section className=" w-full h-auto  py-4 md:py-10 px-4 lg:px-8 ">
           <TourCarousel />
         </section>
+        <div className="w-full flex justify-center">
+          <Button color="black">View All</Button>
+        </div>
       </Bounded>
     </div>
   );
