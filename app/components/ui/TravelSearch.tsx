@@ -25,7 +25,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import Button from "./Button";
+import Button from "../Button";
 
 export function TravelSearch() {
   const [date, setDate] = React.useState<Date>();
@@ -39,7 +39,7 @@ export function TravelSearch() {
         <Select>
           <SelectTrigger className="w-full ">
             <div className="flex items-center gap-2 xl:gap-3">
-              <MapPinIcon className="size-4 xl:size-5  text-orange-600" />
+              <MapPinIcon className="size-4 xl:size-5  text-Orange" />
               <SelectValue placeholder="Where are you going?" />
             </div>
           </SelectTrigger>
@@ -66,7 +66,7 @@ export function TravelSearch() {
               )}
             >
               <div className="flex items-center">
-                <CalendarIcon className="mr-2 xl:mr-3 size-4 md:size-5 text-orange-600" />
+                <CalendarIcon className="mr-2 xl:mr-3 size-4 md:size-5 text-Orange" />
                 {date ? format(date, "PPP") : "When"}
               </div>
               <ChevronDown className="h-4 w-4 opacity-50 text-muted-foreground " />
@@ -91,7 +91,7 @@ export function TravelSearch() {
         <Select value={guests} onValueChange={setGuests}>
           <SelectTrigger className="w-full">
             <div className="flex items-center gap-2 xl:gap-3">
-              <Users className="size-4 md:size-5 text-orange-600" />
+              <Users className="size-4 md:size-5 text-Orange" />
               <SelectValue placeholder="Number of guests" />
             </div>
           </SelectTrigger>
@@ -106,8 +106,8 @@ export function TravelSearch() {
       </div>
 
       {/* Search Button */}
-      <div className="p-4 md:bg-orange-500   text-white rounded-r-xl md:hover:bg-orange-600 group">
-        <button className="w-full md:w-auto bg-orange-500 flex items-center justify-center group-hover:bg-orange-600  rounded-md     px-3 lg:px-6 py-2 font-sans font-medium h z-10 relative  ">
+      <div className="p-4 md:bg-Orange   text-white rounded-r-xl md:hover:bg-orange-700 group">
+        <button className="w-full md:w-auto bg-Orange flex items-center justify-center group-hover:bg-orange-700  rounded-md     px-3 lg:px-6 py-2 font-sans font-medium h z-10 relative  ">
           <Search className="mr-2 h-4 w-4" /> Search
         </button>
       </div>
