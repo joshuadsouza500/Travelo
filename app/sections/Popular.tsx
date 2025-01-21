@@ -9,7 +9,7 @@ const Popular = () => {
         <div className="w-full flex justify-center md:justify-between items-end pb-4">
           <div className=" space-y-1 max-md:text-center">
             <h6 className="md:text-lg text-Orange">Tour packages</h6>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-text-black ">
+            <h2 className="font-medium text-3xl md:text-4xl lg:text-5xl text-text-black ">
               Popular Packages
             </h2>
           </div>
