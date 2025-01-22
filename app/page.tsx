@@ -7,12 +7,13 @@ import Steps from "./sections/Steps";
 export default function Home() {
   return (
     <div className="bg-white font-DM_sans">
-      {/** <Hero />
+      {/** */} <Hero />
       <div className="w-full h-32 md:h-10 "></div>
-    
-      <Popular /> */}
+      <Popular />
       <Steps />
       <Destinations />
+      <Reviews />
+      <div className="w-full h-32 md:h-10 "></div>
     </div>
   );
 }
