@@ -15,14 +15,26 @@ const Destinations = () => {
           Explore some of the most booked and toured packages in our collection
         </p>
       </div>
-      <section className="flex  md:flex-col  gap-3 lg:gap-5 mx-2 lg:mx-10 2xl:mx-20 pt-10 lg:pt-16">
-        <div className="flex max-md:flex-col  w-full h-72 md:min-h-64 xl:min-h-80 gap-3 lg:gap-5">
-          <div className="bg-[url('/destination/Bromo.jpeg')] bg-no-repeat bg- bg-cover rounded-xl basis-1 md:basis-[60%] bg-red-200"></div>
-          <div className="bg-[url('/destination/Java.jpeg')] bg-no-repeat bg- bg-cover rounded-xl basis-1 md:basis-[40%] bg-blue-200"></div>
+      <section className="flex  flex-col  gap-3 lg:gap-5 mx-2 lg:mx-10 2xl:mx-20 pt-10 lg:pt-16 ">
+        <div className="flex max-sm:flex-col  w-full  max-sm:h-[75vh] max-md:h-[55vh] md:min-h-64 xl:min-h-80 gap-3 lg:gap-5 relative">
+          <div className="bg-[url('/destination/Bromo.jpeg')] bg-no-repeat bg- bg-cover rounded-xl basis-full sm:basis-[60%] relative">
+            {" "}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/5 via-black/5 to-transparent  rounded-xl" />
+          </div>
+          <div className="bg-[url('/destination/Java.jpeg')] bg-no-repeat bg- bg-cover rounded-xl basis-full sm:basis-[40%] ">
+            {" "}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent rounded-xl" />
+          </div>
         </div>
-        <div className="flex max-md:flex-col  w-fullh-72 md:min-h-64 xl:min-h-80 gap-3 lg:gap-5">
-          <div className="bg-[url('/destination/Japan.jpeg')] bg-no-repeat bg-center bg-cover rounded-xl basis-1 md:basis-[40%] bg-blue-200"></div>
-          <div className="bg-[url('/destination/Mountains.jpeg')] bg-no-repeat bg-center bg-cover rounded-xl basis-1 md:basis-[60%] bg-red-200"></div>
+        <div className="flex max-sm:flex-col  w-full max-sm:h-[75vh] max-md:h-[55vh] md:min-h-64 xl:min-h-80 gap-3 lg:gap-5">
+          <div className="bg-[url('/destination/Japan.jpeg')] bg-no-repeat bg-center bg-cover relative rounded-xl basis-full sm:basis-[40%] ">
+            {" "}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent rounded-xl" />
+          </div>
+
+          <div className="bg-[url('/destination/Mountains.jpeg')] bg-no-repeat bg-center bg-cover relative rounded-xl basis-full sm:basis-[60%]">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent rounded-xl" />{" "}
+          </div>
         </div>
       </section>
     </Bounded>
