@@ -18,7 +18,7 @@ const statistics = [
     label: "Happy Clients",
   },
   {
-    value: "90",
+    value: "100+",
     label: "Destinations",
   },
 ];
@@ -26,8 +26,8 @@ const Steps = () => {
   return (
     <div className="h-auto  pt-6 md:pt-16    bg-center bg-cover ">
       <Bounded>
-        <div className="w-full grid  md:grid-cols-2  md:justify-between   items-start gap-x-4 lg:gap-x-8 2xl:gap-x-20 pb-4">
-          <figure className=" hidden md:block rounded-xl h-[450px] max-2xl:mx-auto 2xl:place-self-end w-full lg:w-[85%] 2xl:w-[75%]  shadow-xl relative ">
+        <div className="w-full grid  md:grid-cols-2  md:justify-between   items-start gap-x-4 lg:gap-x-8 2xl:gap-x-28 pb-4">
+          <figure className=" hidden md:block rounded-xl h-[450px] max-2xl:mx-auto 2xl:place-self-end w-full lg:w-[85%] 2xl:w-[80%]  shadow-xl relative ">
             <Image
               alt="Traveler"
               height={400}
@@ -39,10 +39,10 @@ const Steps = () => {
             <div className="flex justify-between items-center divide-x-2  w-full py-1 px-2 rounded-b-xl text-white bg-white/95 backdrop-blur-sm absolute bottom-0 left-0">
               {statistics.map((stat, index) => (
                 <div key={index} className="text-center w-1/3">
-                  <span className="block text-Orange text-3xl font-semibold font-DM_serif tracking-wider">
+                  <span className="block text-Orange text-3xl leading-tight font-semibold font-DM_serif tracking-wider">
                     {stat.value}
                   </span>
-                  <span className="text-sm text-black/70">{stat.label}</span>
+                  <span className="text-xs text-black/70 ">{stat.label}</span>
                 </div>
               ))}
             </div>
