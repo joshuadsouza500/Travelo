@@ -19,7 +19,7 @@ const Popular = () => {
             collection
           </p>
         </div>
-        <section className=" w-full h-auto  py-4 md:py-10 px-4 lg:px-8 ">
+        <section className=" w-full h-auto  py-4 md:py-10 px-2 lg:px-8 ">
           <TourCarousel />
         </section>
         <div className="w-full flex justify-center">

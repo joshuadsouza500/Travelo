@@ -27,14 +27,14 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 gap-x-4 md:gap-x-6 2xl:gap-x-8 items-center justify-start py-2 transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-lg md:text-xl lg:text-2xl font-semibold ",
+        "flex flex-1 gap-x-4 md:gap-x-6 2xl:gap-x-8 items-center justify-start py-2  transition-all hover:underline [&[data-state=open]>svg]:rotate-180 text-lg sm:text-xl lg:text-2xl font-semibold ",
         className
       )}
       {...props}
     >
-      <span className="size-3 md:size-4 rounded-full ring-1 ring-black   flex items-center justify-center">
+      <span className="size-3 md:size-5 rounded-full ring-1 ring-black   flex items-center justify-center">
         {" "}
-        <span className="size-1 md:size-2 rounded-full transition-colors duration-200 bg-transparent data-[state=open]: bg-black "></span>
+        <span className="size-1.5 md:size-3 rounded-full transition-colors duration-200  [&[data-state=open]]: bg-text-black "></span>
       </span>
       {children}
       {/**    <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" /> */}
@@ -49,10 +49,10 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden border-l-4 border-text-black   pt-2 ml-1.5 pl-6 lg:pl-10 text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down  tracking-wide md:text-base text-text-black/75"
+    className="overflow-hidden border-l-4 border-text-black   pt-2 ml-2 pl-6 lg:pl-10 text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down  tracking-wide md:text-base text-text-black/75"
     {...props}
   >
-    <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    <div className={cn("pb-4 xl:pb-5 pt-0", className)}>{children}</div>
   </AccordionPrimitive.Content>
 ));
 

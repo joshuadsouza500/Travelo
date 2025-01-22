@@ -8,12 +8,26 @@ import {
 } from "@/components/ui/accordion";
 import Image from "next/image";
 
+const statistics = [
+  {
+    value: "4+",
+    label: "years of experience",
+  },
+  {
+    value: "200+",
+    label: "Happy Clients",
+  },
+  {
+    value: "90",
+    label: "Destinations",
+  },
+];
 const Steps = () => {
   return (
-    <div className="h-auto  pt-6 md:pt-16    bg-center bg-cover">
+    <div className="h-auto  pt-6 md:pt-16    bg-center bg-cover ">
       <Bounded>
-        <div className="w-full grid md:grid-cols-2  md:justify-between items-start gap-x-4 lg:gap-x-8 pb-4">
-          <figure className="hidden md:block  rounded-xl h-[450px] mx-auto w-[80%] shadow-lg relative">
+        <div className="w-full grid  md:grid-cols-2  md:justify-between   items-start gap-x-4 lg:gap-x-8 2xl:gap-x-20 pb-4">
+          <figure className=" hidden md:block rounded-xl h-[450px] max-2xl:mx-auto 2xl:place-self-end w-full lg:w-[85%] 2xl:w-[75%]  shadow-xl relative ">
             <Image
               alt="Traveler"
               height={400}
@@ -21,15 +35,19 @@ const Steps = () => {
               src="/stepOrange.jpeg"
               className="h-full w-full object-cover object-center rounded-xl"
             />
-            <div className="w-auto px-4 py-2 rounded-xl text-white font-semibold text-lg text-center  h-16 bg-white/25 backdrop-blur-md absolute bottom-0">
-              <h3>
-                200+
-                <br />
-                Happy Customers
-              </h3>
+
+            <div className="flex justify-between items-center divide-x-2  w-full py-1 px-2 rounded-b-xl text-white bg-white/95 backdrop-blur-sm absolute bottom-0 left-0">
+              {statistics.map((stat, index) => (
+                <div key={index} className="text-center w-1/3">
+                  <span className="block text-Orange text-3xl font-semibold font-DM_serif tracking-wider">
+                    {stat.value}
+                  </span>
+                  <span className="text-sm text-black/70">{stat.label}</span>
+                </div>
+              ))}
             </div>
           </figure>
-          <section className="">
+          <section className="max-md:pb-8 ">
             <div className=" space-y-1 max-md:text-center pb-4 xl:pb-6">
               <h6 className="md:text-lg text-Orange">How it works</h6>
               <h2 className="font-medium text-3xl md:text-4xl lg:text-5xl text-text-black ">
@@ -77,6 +95,25 @@ const Steps = () => {
               </Accordion>
             </div>
           </section>
+          <figure className="   md:hidden rounded-xl h-[300px] max-h-[350px] mx-auto w-[95%] shadow-lg relative ">
+            <Image
+              alt="Traveler"
+              height={400}
+              width={400}
+              src="/stepOrange.jpeg"
+              className="h-full w-full object-cover object-center rounded-xl "
+            />
+            <div className="flex  justify-between items-center divide-x-2  w-full py-1 px-2 rounded-b-xl text-white bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 ">
+              {statistics.map((stat, index) => (
+                <div key={index} className="text-center w-1/3">
+                  <span className="block text-Orange text-2xl leading-none font-semibold font-DM_serif tracking-wider">
+                    {stat.value}
+                  </span>
+                  <span className="text-xs text-black/70">{stat.label}</span>
+                </div>
+              ))}
+            </div>
+          </figure>
         </div>
       </Bounded>
     </div>
@@ -84,3 +121,43 @@ const Steps = () => {
 };
 
 export default Steps;
+
+{
+  /**<Accordion type="single" collapsible className="space-y-4">
+  <AccordionItem value="item-1" className="border-none">
+    <AccordionTrigger className="hover:no-underline">
+      <div className="flex items-center gap-4">
+        <div className="w-6 h-6 rounded-full border-2 border-black flex items-center justify-center">
+          <div className="w-3 h-3 rounded-full bg-black transform scale-0 transition-transform data-[state=open]:scale-100" />
+        </div>
+        <div className="flex gap-2">
+          <span className="font-medium">01/</span>
+          <span className="font-medium">Explore Destination</span>
+        </div>
+      </div>
+    </AccordionTrigger>
+    <AccordionContent className="pl-10">
+      Encapsulates the experience of travel that merges the serenity of nature
+      with the dynamism of city
+    </AccordionContent>
+  </AccordionItem>
+
+  <AccordionItem value="item-2" className="border-none">
+    <AccordionTrigger className="hover:no-underline">
+      <div className="flex items-center gap-4">
+        <div className="w-6 h-6 rounded-full border-2 border-black flex items-center justify-center">
+          <div className="w-3 h-3 rounded-full bg-black transform scale-0 transition-transform data-[state=open]:scale-100" />
+        </div>
+        <div className="flex gap-2">
+          <span className="font-medium">02/</span>
+          <span className="font-medium">Select A Tour Plan</span>
+        </div>
+      </div>
+    </AccordionTrigger>
+    <AccordionContent className="pl-10">
+      Choose from our carefully curated selection of tour packages designed to
+      provide unforgettable experiences
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>; */
+}
