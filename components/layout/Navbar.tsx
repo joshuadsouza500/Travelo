@@ -1,15 +1,23 @@
+"use client";
 import Link from "next/link";
 
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-
-//import { useMediaQuery } from "react-responsive";
+import { useState } from "react";
+import {
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+  motion,
+} from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const NavBar = () => {
   {
-    /**  const { scrollY } = useScroll();
+    /** */
+  }
+  const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
-
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() ?? 0;
     if (latest > previous && latest > 300) {
@@ -24,10 +32,22 @@ const NavBar = () => {
     [0, 100],
     ["100%", is2xl ? "40%" : "70%"]
   );
- */
-  }
+
   return (
-    <nav className=" md:px-6 flex    py-2 px-2 mx-auto  z-20  sticky top-0.5 mb-1 rounded-full md:py-3 2xl:py-4 backdrop-blur-lg bg-white/25 items-center lg:px-10  2xl:px-20 ">
+    <motion.nav
+      className="  flex  sm:px-6   px-2 py-2 sm:py-3 xl:py-4  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full backdrop-blur-lg items-center  bg-white/30  max-w-7xl 2xl:max-w-[1800px] "
+      variants={{
+        hidden: {
+          y: -100,
+        },
+        visible: {
+          y: 0,
+        },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      style={{ width: Width }}
+    >
       {/**      MobileNav
   <div className="absolute right-2 md:hidden  ">
         <div
@@ -115,14 +135,14 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
-        <button className="hidden md:block group  border-zinc-800 text-sm text-background rounded-full  px-3 py-2  bg-gradient-to-br shadow-sm from-zinc-900 to-zinc-600 hover:border-white">
+        <button className="block group  border-zinc-800 text-sm text-background rounded-full px-3 py-1.5  md:px-3 md:py-2  bg-gradient-to-br shadow-sm from-black to-zinc-900 hover:border-white">
           <Link href="/contact" className="  flex items-center">
-            Contact me
+            Book Now
             <ArrowUpRight className="ml-2 size-4 group-hover:rotate-45  transition-transform bg-white text-black rounded-full " />
           </Link>
         </button>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
