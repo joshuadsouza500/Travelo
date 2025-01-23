@@ -3,8 +3,8 @@ import Button from "../Shadui/Button";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1A1F2C] text-white py-12 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-Bg-green mx-1 rounded-xl text-white py-12 px-4 md:px-8">
+      <div className=" max-w-7xl 2xl:max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand Column */}
         <div className="space-y-4">
           <h2 className="text-2xl font-bold">Travelo</h2>
@@ -41,11 +41,7 @@ const Footer = () => {
                 Security
               </a>
             </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Security Measures
-              </a>
-            </li>
+
             <li>
               <a href="#" className="hover:text-white transition-colors">
                 Third-Party Links
@@ -82,13 +78,13 @@ const Footer = () => {
           <p className="text-gray-300 text-sm mb-4">
             Subscribe to our newsletter for travel updates and exclusive offers.
           </p>
-          <div className="space-y-2">
+          <div className="space-y-2 flex items-center">
             <input
               type="email"
               placeholder="Enter your email"
               className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
             />
-            <Button className="w-full">Subscribe</Button>
+            <Button className="">Subscribe</Button>
           </div>
         </div>
       </div>

@@ -32,13 +32,13 @@ export function TravelSearch() {
   const [guests, setGuests] = React.useState("1");
 
   return (
-    <div className="flex flex-col md:flex-row md:items-center md:divide-x rounded-xl border   shadow-sm w-full bg-white  ">
+    <div className="flex flex-col md:flex-row md:items-center md:divide-x rounded-xl border   shadow-sm w-full bg-white  font-DM_sans">
       {/*divide-x is used to apply a horizontal dividing line between children */}
       {/* Destination Select */}
       <div className="pt-3 py-2 px-4 md:py-4 2xl:py-6   flex-1 ">
         <Select>
           <SelectTrigger className="w-full ">
-            <div className="flex items-center gap-2 xl:gap-3">
+            <div className="flex items-center gap-2 xl:gap-3 font-DM_sans">
               <MapPinIcon className="size-4 xl:size-5  text-Orange" />
               <SelectValue placeholder="Where are you going?" />
             </div>

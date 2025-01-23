@@ -54,7 +54,7 @@ const Steps = () => {
                 3 Simple Steps
               </h2>
             </div>
-            <div className=" ">
+            <div className="max-md:mx-auto max-md:w-[95%]">
               {" "}
               <Accordion
                 type="single"
