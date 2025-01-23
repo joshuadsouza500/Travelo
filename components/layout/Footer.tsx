@@ -1,14 +1,13 @@
 import { PersonStanding, SortAscIcon } from "lucide-react";
-import Button from "../Shadui/Button";
 
 const Footer = () => {
   return (
-    <footer className="bg-Bg-green mx-1 rounded-xl text-white py-12 px-4 md:px-8">
-      <div className=" max-w-7xl 2xl:max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-Bg-green m-1 rounded-xl text-white pt-12 px-4 md:px-6">
+      <div className="  max-w-7xl 2xl:max-w-8xl mx-auto grid grid-cols-2 lg:grid-cols-3  gap-5">
         {/* Brand Column */}
-        <div className="space-y-4">
+        <div className=" space-y-4 ">
           <h2 className="text-2xl font-bold">Travelo</h2>
-          <p className="text-gray-300 text-sm">
+          <p className="text-gray-300 text-sm  xl:mr-10">
             Embark on limitless adventures with us. Your passport to
             unforgettable journeys and global exploration
           </p>
@@ -22,37 +21,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Privacy Terms Column */}
-        <div>
-          <h3 className="font-semibold mb-4">Privacy Terms</h3>
-          <ul className="space-y-2 text-gray-300 text-sm">
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Data Collection
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Security
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Third-Party Links
-              </a>
-            </li>
-          </ul>
-        </div>
-
         {/* Terms and Conditions Column */}
-        <div>
-          <h3 className="font-semibold mb-4">Terms and Conditions</h3>
+        <div className="md:mx-auto  ">
+          <h3 className="font-semibold mb-3">Links</h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
               <a href="#" className="hover:text-white transition-colors">
@@ -73,23 +44,25 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Column */}
-        <div>
-          <h3 className="font-semibold mb-4">Newsletter</h3>
+        <div className="max-md:pt-8 max-md:col-span-2">
+          <h3 className="font-semibold mb-2">Newsletter</h3>
           <p className="text-gray-300 text-sm mb-4">
             Subscribe to our newsletter for travel updates and exclusive offers.
           </p>
-          <div className="space-y-2 flex items-center">
+          <div className=" flex items-center bg-white/15 rounded-lg border border-white/20 text-white w-[90%] ">
             <input
               type="email"
               placeholder="Enter your email"
-              className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
+              className=" placeholder:text-gray-400 bg-white/0 rounded-l-lg py-3 w-full pl-2 md:pl-4"
             />
-            <Button className="">Subscribe</Button>
+            <button className="bg-text-black max-md:text-sm rounded-3xl py-1 px-2 mr-1 md:py-1.5 md:px-3">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 text-center text-sm text-gray-400">
+      <div className="max-w-7xl 2xl:max-w-8xl mx-auto mt-12 pb-4 pt-8 border-t border-white/10 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} Your Travel Company. All rights reserved
       </div>
     </footer>
