@@ -23,7 +23,9 @@ const Popular = () => {
           <TourCarousel />
         </section>
         <div className="w-full flex justify-center">
-          <Button color="black">View All</Button>
+          <Button color="black" className="px-4 xl:px-8">
+            View All
+          </Button>
         </div>
       </Bounded>
     </div>

@@ -5,12 +5,14 @@ import {
   CarouselItem,
 } from "@/components/Shadui/carousel";
 import Image from "next/image";
+import { Star } from "lucide-react";
 
 type TourProp = {
   title: string;
   duration: string;
   price: string;
   image: string;
+  rating: number;
 };
 
 const destinations: TourProp[] = [
@@ -19,6 +21,7 @@ const destinations: TourProp[] = [
     duration: "7 days, 6 nights",
     price: "$ 799",
     image: "/amazon.jpeg",
+    rating: 5.0,
   },
 
   {
@@ -26,18 +29,21 @@ const destinations: TourProp[] = [
     duration: "6 days, 5 nights",
     price: "$ 899",
     image: "/china.jpeg",
+    rating: 4.9,
   },
   {
     title: "Roma City Adventure",
     duration: "5 days, 4 nights",
     price: "$ 799",
     image: "/Rome.avif",
+    rating: 4.5,
   },
   {
     title: "Tokyo Discovery",
     duration: "8 days, 7 nights",
     price: "$ 1299",
     image: "/Tokyo.jpg", //https://t3.ftcdn.net/jpg/02/65/23/70/360_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg
+    rating: 4.8,
   },
 ];
 const TourCarousel = () => {
@@ -49,6 +55,12 @@ const TourCarousel = () => {
             key={index}
             className="relative  basis-1/2 md:basis-1/3 2xl:basis-1/4  rounded-xl overflow-hidden group   shadow-md"
           >
+            <div className=" bg-white/30 backdrop-blur-lg rounded-full  px-2 md:px-3 py-0.5 md:py-1   absolute top-4 right-2  flex items-center gap-x-1 md:gap-x-1.5 z-10 shadow-sm">
+              <Star className="text-yellow-500 fill-yellow-500 size-3.5 md:size-4 " />
+              <h6 className="max-md:text-sm font-medium  text-white">
+                {destination.rating}
+              </h6>
+            </div>
             <Image
               src={destination.image}
               alt="Tour package"
