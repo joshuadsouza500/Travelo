@@ -7,6 +7,7 @@ import {
 import { Quote } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
+import { type CarouselApi } from "@/components/Shadui/carousel";
 import { Bounded } from "../../components/layout/Bounded";
 
 const testimonials = [
@@ -41,7 +42,7 @@ const testimonials = [
 ];
 
 const Reviews = () => {
-  const [api, setApi] = useState<any>(null);
+  const [api, setApi] = useState<CarouselApi | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleProfileClick = (index: number) => {
