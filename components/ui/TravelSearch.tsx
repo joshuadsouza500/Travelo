@@ -12,30 +12,30 @@ import { addDays, format } from "date-fns";
 
 import { cn } from "@/lib/utils";
 
-import { Calendar } from "@/components/ui/calendar";
+import { Calendar } from "@/components/Shadui/calendar";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover";
+} from "@/components/Shadui/popover";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import Button from "../Button";
+} from "@/components/Shadui/select";
+import Button from "../Shadui/Button";
 
 export function TravelSearch() {
   const [date, setDate] = React.useState<Date>();
   const [guests, setGuests] = React.useState("1");
 
   return (
-    <div className="flex flex-col md:flex-row md:items-center md:divide-x rounded-xl border   shadow-sm w-full bg-white">
+    <div className="flex flex-col md:flex-row md:items-center md:divide-x rounded-xl border   shadow-sm w-full bg-white  ">
       {/*divide-x is used to apply a horizontal dividing line between children */}
       {/* Destination Select */}
-      <div className="pt-3 py-2 px-4 md:py-4 flex-1 ">
+      <div className="pt-3 py-2 px-4 md:py-4 2xl:py-6   flex-1 ">
         <Select>
           <SelectTrigger className="w-full ">
             <div className="flex items-center gap-2 xl:gap-3">
@@ -55,7 +55,7 @@ export function TravelSearch() {
       </div>
 
       {/* Date Picker */}
-      <div className="py-2 px-4 md:py-4 flex-1 ">
+      <div className="py-2 px-4 md:py-4 2xl:py-6 flex-1 ">
         <Popover>
           <PopoverTrigger asChild>
             <Button
@@ -87,7 +87,7 @@ export function TravelSearch() {
       </div>
 
       {/* Guests Select */}
-      <div className="py-2 px-4 md:py-4 flex-1">
+      <div className="py-2 px-4 md:py-4 2xl:py-6 flex-1">
         <Select value={guests} onValueChange={setGuests}>
           <SelectTrigger className="w-full">
             <div className="flex items-center gap-2 xl:gap-3">
@@ -106,8 +106,8 @@ export function TravelSearch() {
       </div>
 
       {/* Search Button */}
-      <div className="p-4 md:bg-Orange   text-white rounded-r-xl md:hover:bg-orange-700 group">
-        <button className="w-full md:w-auto bg-Orange flex items-center justify-center group-hover:bg-orange-700  rounded-md     px-3 lg:px-6 py-2 font-sans font-medium h z-10 relative  ">
+      <div className="p-4 md:bg-Orange   text-white rounded-r-xl md:hover:bg-orange-700 group ">
+        <button className="w-full md:w-auto bg-Orange flex items-center justify-center group-hover:bg-orange-700  rounded-md     px-3 lg:px-6 py-2 2xl:py-4 font-sans font-medium h z-10 relative  ">
           <Search className="mr-2 h-4 w-4" /> Search
         </button>
       </div>

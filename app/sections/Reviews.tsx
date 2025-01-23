@@ -3,11 +3,11 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { Quote, TextQuote } from "lucide-react";
+} from "@/components/Shadui/carousel";
+import { Quote } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { Bounded } from "../components/ui/Bounded";
+import { Bounded } from "../../components/layout/Bounded";
 
 const testimonials = [
   {
@@ -41,7 +41,7 @@ const testimonials = [
 ];
 
 const Reviews = () => {
-  const [api, setApi] = useState<T>(null);
+  const [api, setApi] = useState<any>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleProfileClick = (index: number) => {
@@ -67,13 +67,13 @@ const Reviews = () => {
   }, [api]);
 
   return (
-    <div className=" py-16 bg-Bg-green rounded-xl mx-1">
+    <div className=" py-16 2xl:py-24 bg-Bg-green rounded-xl mx-1">
       <Bounded>
         {" "}
         <div className="relative flex flex-col items-center justify-between h-auto max-w-3xl mx-auto ">
           {/* Quote mark */}
 
-          <Quote className="rotate-180 absolute top-0 left-0 md:-left-9 size-14  text-Text opacity-30" />
+          <Quote className="rotate-180 absolute top-0 left-0 md:-left-9 2xl:-left-10 size-14 2xl:size-20 text-Text opacity-30" />
 
           {/* Testimonial carousel */}
           <Carousel
@@ -92,7 +92,7 @@ const Reviews = () => {
                       {testimonial.text}
                     </p>
                     <div className="testimonial-transition w-full text-center">
-                      <h3 className="font-semibold text-white">
+                      <h3 className="font-semibold 2xl:text-lg text-white">
                         {testimonial.reviewer}
                       </h3>
                       <p className="text-white/70">{testimonial.role}</p>
@@ -104,7 +104,7 @@ const Reviews = () => {
           </Carousel>
 
           {/* Profile images navigation */}
-          <div className="pt-4 lg:pt-8 flex items-center gap-6 md:gap-10  ">
+          <div className="pt-4 lg:pt-8 2xl:pt-12 flex items-center gap-6 md:gap-10  2xl:gap-14">
             {testimonials.map((testimonial, index) => (
               <button
                 key={testimonial.id}
@@ -120,7 +120,7 @@ const Reviews = () => {
                   alt={testimonial.reviewer}
                   width={40}
                   height={40}
-                  className={`size-8  md:size-12 rounded-full object-cover shadow-inner  ${
+                  className={`size-8  md:size-12 2xl:size-14 rounded-full object-cover shadow-inner  ${
                     index === currentIndex
                       ? "bg-Orange/80 "
                       : "bg-Orange/50 hover:bg-Orange/70"

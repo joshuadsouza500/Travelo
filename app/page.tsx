@@ -1,3 +1,4 @@
+import BlogSection from "./sections/Blog";
 import Destinations from "./sections/Destinations";
 import Hero from "./sections/Hero";
 import Popular from "./sections/Popular";
@@ -13,7 +14,7 @@ export default function Home() {
       <Steps />
       <Destinations />
       <Reviews />
-      <div className="w-full h-32 md:h-10 "></div>
+      <BlogSection />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { TravelSearch } from "../components/ui/TravelSearch";
+import { TravelSearch } from "../../components/ui/TravelSearch";
 
 const Hero = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import { Bounded } from "../components/ui/Bounded";
-import TourCarousel from "../components/ui/TourCarousel";
-import Button from "../components/Button";
+import { Bounded } from "../../components/layout/Bounded";
+import TourCarousel from "../../components/ui/TourCarousel";
+import Button from "@/components/Shadui/Button";
 
 const Popular = () => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import { Bounded } from "../components/ui/Bounded";
+import { Bounded } from "../../components/layout/Bounded";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/Shadui/accordion";
 import Image from "next/image";
 
 const statistics = [

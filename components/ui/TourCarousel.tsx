@@ -3,7 +3,7 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
+} from "@/components/Shadui/carousel";
 import Image from "next/image";
 
 type TourProp = {
