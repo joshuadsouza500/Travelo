@@ -14,10 +14,10 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
-    date: "Nov 18, 2023",
-    title: "Jeep Adventure is a new attraction for tourists visiting Garut",
+    date: "Nov 18, 2024",
+    title: "A Journey Through Java: Exploring Indonesia's Cultural Heart",
     excerpt:
-      "Jeep Adventure is one of the tourist attractions that has been popular recently. The sensation of exploring nature with a classic vehicle brings its own excitement...",
+      "Java, the most populous island in Indonesia, is a vibrant tapestry of culture, history, and natural beauty, join us as we explore the breathtaking landscapes that make Java a must-visit destination for every traveler....",
     imageUrl: "/destination/Java.jpeg",
   },
   {
@@ -73,9 +73,9 @@ const BlogSection = () => {
         ))}
       </div>
 
-      <div className="text-center mt-12">
-        <Button color="black" className="px-8  ">
-          View more
+      <div className=" flex justify-center py-6 xl:py-10">
+        <Button color="black" className="px-6 xl:px-8">
+          View More{" "}
         </Button>
       </div>
     </Bounded>

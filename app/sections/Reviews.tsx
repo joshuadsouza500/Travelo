@@ -74,7 +74,7 @@ const Reviews = () => {
         <div className="relative flex flex-col items-center justify-between h-auto max-w-3xl mx-auto ">
           {/* Quote mark */}
 
-          <Quote className="rotate-180 absolute top-0 left-0 md:-left-9 2xl:-left-10 size-14 2xl:size-20 text-Text opacity-30" />
+          <Quote className="rotate-180 absolute top-0 left-0 md:-left-9 2xl:-left-10 size-14 2xl:size-20 text-Text opacity-25" />
 
           {/* Testimonial carousel */}
           <Carousel
@@ -105,7 +105,7 @@ const Reviews = () => {
           </Carousel>
 
           {/* Profile images navigation */}
-          <div className="pt-4 lg:pt-8 2xl:pt-12 flex items-center gap-6 md:gap-10  2xl:gap-14">
+          <div className="pt-4 lg:pt-8 2xl:pt-12 flex items-center gap-8 md:gap-10  2xl:gap-14">
             {testimonials.map((testimonial, index) => (
               <button
                 key={testimonial.id}

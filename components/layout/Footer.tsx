@@ -3,13 +3,15 @@ import { PersonStanding, SortAscIcon } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-Bg-green m-1 rounded-xl text-white pt-12 px-4 md:px-6">
-      <div className="  max-w-7xl 2xl:max-w-8xl mx-auto grid grid-cols-2 lg:grid-cols-3  gap-5">
+      <div className="  max-w-7xl 2xl:max-w-8xl mx-auto grid grid-cols-2 lg:grid-cols-3  gap-5 ">
         {/* Brand Column */}
-        <div className=" space-y-4 ">
+        <div className=" space-y-2">
           <h2 className="text-2xl font-bold">Travelo</h2>
           <p className="text-gray-300 text-sm  xl:mr-10">
-            Embark on limitless adventures with us. Your passport to
-            unforgettable journeys and global exploration
+            Embark on limitless adventures with us.{" "}
+            <span className="hidden md:block">
+              Your passport to unforgettable journeys and global exploration
+            </span>
           </p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-gray-300 transition-colors">
@@ -22,7 +24,7 @@ const Footer = () => {
         </div>
 
         {/* Terms and Conditions Column */}
-        <div className="md:mx-auto  ">
+        <div className="mx-auto  ">
           <h3 className="font-semibold mb-3">Links</h3>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
@@ -44,7 +46,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Column */}
-        <div className="max-md:pt-8 max-md:col-span-2">
+        <div className="hidden md:block max-md:pt-8 max-md:col-span-2">
           <h3 className="font-semibold mb-2">Newsletter</h3>
           <p className="text-gray-300 text-sm mb-4">
             Subscribe to our newsletter for travel updates and exclusive offers.

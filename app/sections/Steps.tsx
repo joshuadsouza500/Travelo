@@ -24,7 +24,7 @@ const statistics = [
 ];
 const Steps = () => {
   return (
-    <div className="h-auto  pt-6 md:pt-16    bg-center bg-cover ">
+    <div className="h-auto  pt-2 md:pt-16  pb-10  xl:pb-16    bg-center bg-cover ">
       <Bounded>
         <div className="w-full grid  md:grid-cols-2  md:justify-between   items-start gap-x-4 lg:gap-x-8 2xl:gap-x-28 pb-4">
           <figure className=" hidden md:block rounded-xl h-[450px] max-2xl:mx-auto 2xl:place-self-end w-full lg:w-[85%] 2xl:w-[80%]  shadow-xl relative ">
@@ -48,7 +48,7 @@ const Steps = () => {
             </div>
           </figure>
           <section className="max-md:pb-8 ">
-            <div className=" space-y-1 max-md:text-center pb-4 xl:pb-6">
+            <div className=" space-y-1 max-md:text-center pb-6 ">
               <h6 className="md:text-lg text-Orange">How it works</h6>
               <h2 className="font-medium text-3xl md:text-4xl lg:text-5xl text-text-black ">
                 3 Simple Steps
@@ -95,18 +95,18 @@ const Steps = () => {
               </Accordion>
             </div>
           </section>
-          <figure className="   md:hidden rounded-xl h-[300px] max-h-[350px] mx-auto w-[95%] shadow-lg relative ">
+          <figure className=" md:hidden rounded-xl h-[350px] max-h-[360px] mx-auto w-[95%] shadow-lg relative ">
             <Image
               alt="Traveler"
               height={400}
               width={400}
-              src="/stepOrange.jpeg"
+              src="/step1.jpeg"
               className="h-full w-full object-cover object-center rounded-xl "
             />
             <div className="flex  justify-between items-center divide-x-2  w-full py-1 px-2 rounded-b-xl text-white bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 ">
               {statistics.map((stat, index) => (
-                <div key={index} className="text-center w-1/3">
-                  <span className="block text-Orange text-2xl leading-none font-semibold font-DM_serif tracking-wider">
+                <div key={index} className="text-center w-1/3 py-1">
+                  <span className="block text-text-black text-2xl leading-none font-semibold font-DM_serif tracking-wider">
                     {stat.value}
                   </span>
                   <span className="text-xs text-black/70">{stat.label}</span>
