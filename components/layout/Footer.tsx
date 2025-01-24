@@ -1,4 +1,4 @@
-import { PersonStanding, SortAscIcon } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -6,19 +6,39 @@ const Footer = () => {
       <div className="  max-w-7xl 2xl:max-w-8xl mx-auto grid grid-cols-2 lg:grid-cols-3  gap-5 ">
         {/* Brand Column */}
         <div className=" space-y-2">
-          <h2 className="text-2xl font-bold">Travelo</h2>
+          <h2 className="text-2xl font-bold font-DM_serif tracking-wider">
+            Travelo.
+          </h2>
           <p className="text-gray-300 text-sm  xl:mr-10">
             Embark on limitless adventures with us.{" "}
             <span className="hidden md:block">
               Your passport to unforgettable journeys and global exploration
             </span>
           </p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-gray-300 transition-colors">
-              <SortAscIcon className="h-5 w-5" />
+          <div className="flex gap-3 opacity-90 pt-1">
+            <a href="#" className="text-gray-300 transition-colors">
+              <Image
+                width={20}
+                height={20}
+                alt={"social icon"}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+              />
             </a>
             <a href="#" className="hover:text-gray-300 transition-colors">
-              <PersonStanding className="h-5 w-5" />
+              <Image
+                width={20}
+                height={20}
+                alt={"social icon"}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg"
+              />
+            </a>
+            <a href="#" className="hover:text-gray-300 transition-colors">
+              <Image
+                width={20}
+                height={20}
+                alt={"social icon"}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+              />
             </a>
           </div>
         </div>
