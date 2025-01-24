@@ -21,22 +21,7 @@ const destinations: TourProp[] = [
     duration: "7 days, 6 nights",
     price: "$ 799",
     image: "/amazon.jpeg",
-    rating: 5.0,
-  },
-
-  {
-    title: " Shengsi Islands Tour",
-    duration: "6 days, 5 nights",
-    price: "$ 899",
-    image: "/china.jpeg",
     rating: 4.9,
-  },
-  {
-    title: "Roma City Adventure",
-    duration: "5 days, 4 nights",
-    price: "$ 799",
-    image: "/Rome.avif",
-    rating: 4.5,
   },
   {
     title: "Tokyo Discovery",
@@ -45,15 +30,30 @@ const destinations: TourProp[] = [
     image: "/Tokyo.jpg", //https://t3.ftcdn.net/jpg/02/65/23/70/360_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg
     rating: 4.8,
   },
+
+  {
+    title: " Shengsi Islands Tour",
+    duration: "6 days, 5 nights",
+    price: "$ 899",
+    image: "/china.jpeg",
+    rating: 5.0,
+  },
+  {
+    title: "Roma City Adventure",
+    duration: "5 days, 4 nights",
+    price: "$ 799",
+    image: "/Rome.avif",
+    rating: 4.5,
+  },
 ];
 const TourCarousel = () => {
   return (
     <Carousel>
-      <CarouselContent className="space-x-4 md:space-x-6 lg:space-x-8">
+      <CarouselContent className=" pl-4 space-x-4 md:space-x-6 lg:space-x-8">
         {destinations.map((destination, index) => (
           <CarouselItem
             key={index}
-            className="relative  basis-1/2 md:basis-1/3 2xl:basis-1/4  rounded-xl overflow-hidden group   shadow-md"
+            className="relative basis-1/2 md:basis-1/3 2xl:basis-1/4  rounded-xl overflow-hidden group   shadow-md"
           >
             <div className=" bg-white/30 backdrop-blur-lg rounded-full  px-2 md:px-3 py-0.5 md:py-1   absolute top-4 right-2  flex items-center gap-x-1 md:gap-x-1.5 z-10 shadow-sm">
               <Star className="text-yellow-500 fill-yellow-500 size-3.5 md:size-4 " />
@@ -66,7 +66,7 @@ const TourCarousel = () => {
               alt="Tour package"
               height={400}
               width={400}
-              className=" object-center object-cover  h-full w-full group-hover:scale-105 transition-transform duration-300 aspect-[3/4] max-h-[250px] md:max-h-[350px] lg:max-h-[450px]  "
+              className=" object-center object-cover  h-full w-full group-hover:scale-105 transition-transform duration-300 aspect-[3/4] max-h-[280px] md:max-h-[350px] lg:max-h-[450px]  "
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent rounded-xl" />
             <div className="  text-white p-2   absolute bottom-0 left-0 md:p-4  w-full">
