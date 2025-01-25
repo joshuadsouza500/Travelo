@@ -23,7 +23,7 @@ const Hero = () => {
           The Best Place to Start Your Adventure
         </MotionDiv>
         <div className="flex flex-col text-center">
-          <span className=" inline-block overflow-hidden pb-1">
+          <span className=" inline-block overflow-hidden md:pb-1">
             <Motionh1
               className="  text-white text-4xl md:text-6xl  xl:text-7xl leading-tight md:leading-none  pb-1  "
               initial={{ y: "100%", opacity: 0.8 }}

@@ -25,7 +25,7 @@ const statistics = [
 ];
 const Steps = () => {
   return (
-    <div className="h-auto  pt-2 md:pt-16  pb-10  xl:pb-16    bg-center bg-cover ">
+    <div className="h-auto  pt-1 md:pt-16  pb-10  xl:pb-16    bg-center bg-cover   ">
       <Bounded>
         <div className="w-full grid  md:grid-cols-2  md:justify-between   items-start gap-x-4 lg:gap-x-8 2xl:gap-x-28 pb-4">
           <figure className=" hidden md:block rounded-xl h-[450px] max-2xl:mx-auto 2xl:place-self-end w-full lg:w-[85%] 2xl:w-[80%]  shadow-xl relative ">
@@ -110,7 +110,7 @@ const Steps = () => {
                   <span className="block text-Orange text-2xl leading-none font-semibold font-DM_serif tracking-wider">
                     {stat.value}
                   </span>
-                  <span className="text-xs text-black/70 ">{stat.label}</span>
+                  <span className="text-xs text-black/60 ">{stat.label}</span>
                 </div>
               ))}
             </div>
