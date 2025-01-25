@@ -55,15 +55,15 @@ export function TravelSearch() {
           <PopoverTrigger asChild>
             <button
               className={cn(
-                "w-full py-2 text-left   flex  items-center  focus:border-b border-orange-600/50   focus:bg-accent text-accent-foreground  text-sm   justify-between",
+                "w-full  py-2 px-3 text-left   flex  items-center  focus:border-b border-orange-600/50   focus:bg-accent   text-sm   justify-between",
                 !date && "text-muted-foreground "
               )}
             >
-              <div className="flex items-center">
+              <div className="flex items-center text-text-black">
                 <CalendarIcon className="mr-2 xl:mr-3 size-4 md:size-5 text-Orange" />
                 {date ? format(date, "PPP") : "When"}
               </div>
-              <ChevronDown className="h-4 w-4 opacity-50 text-muted-foreground " />
+              <ChevronDown className="h-4 w-4 opacity-60 text-text-black" />
             </button>
           </PopoverTrigger>
           <PopoverContent className="w-auto p-0" align="start">
@@ -71,7 +71,7 @@ export function TravelSearch() {
               mode="single"
               selected={date}
               onSelect={setDate}
-              initialFocus
+              autoFocus
               disabled={(date) =>
                 date < new Date() || date > addDays(new Date(), 120)
               }
