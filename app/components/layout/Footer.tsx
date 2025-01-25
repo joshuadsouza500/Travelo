@@ -71,7 +71,7 @@ const Footer = () => {
           <p className="text-gray-300 text-sm mb-4">
             Subscribe to our newsletter for travel updates and exclusive offers.
           </p>
-          <div className=" flex items-center bg-white/15 rounded-lg border border-white/20 text-white w-[90%] ">
+          <div className=" flex items-center bg-white/15 rounded-full border border-white/20 text-white w-[90%] ">
             <input
               type="email"
               placeholder="Enter your email"

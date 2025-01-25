@@ -1,11 +1,8 @@
 import React from "react";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/Shadui/carousel";
+
 import Image from "next/image";
 import { Star } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem } from "../Shadui/carousel";
 
 type TourProp = {
   title: string;
@@ -74,9 +71,13 @@ const TourCarousel = () => {
                 {destination.title}
               </h5>
               <div className="flex  justify-between items-center w-full ">
-                <p className="text-sm text-white/90">{destination.duration}</p>
+                <p className="text-xs md:text-sm text-white/90">
+                  {destination.duration}
+                </p>
 
-                <h6 className="md:text-lg font-medium">{destination.price}</h6>
+                <h6 className="text-sm md:text-lg font-medium">
+                  {destination.price}
+                </h6>
               </div>
             </div>
           </CarouselItem>

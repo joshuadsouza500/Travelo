@@ -1,6 +1,6 @@
-import { Bounded } from "@/components/layout/Bounded";
-import Button from "@/components/Shadui/Button";
-import { Card } from "@/components/ui/card";
+import { Bounded } from "../components/layout/Bounded";
+import Button from "../components/Shadui/Button";
+import { Card } from "../components/ui/card";
 import Image from "next/image";
 
 interface BlogPost {
@@ -33,7 +33,7 @@ const blogPosts: BlogPost[] = [
 
 const BlogSection = () => {
   return (
-    <Bounded className="h-auto  py-16 md:py-20 xl:py-28 space-y-6 md:space-y-10 xl:space-y-16 font-DM_sans">
+    <Bounded className="h-auto  py-16 md:py-20  space-y-6 md:space-y-10 xl:space-y-16 font-DM_sans">
       <div className="w-full flex justify-center md:justify-between items-end pb-4  ">
         <div className=" space-y-1 max-md:text-center ">
           <h6 className="md:text-lg text-Orange">Our Blog</h6>

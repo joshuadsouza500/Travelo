@@ -3,12 +3,12 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/Shadui/carousel";
+} from "../components/Shadui/carousel";
 import { Quote } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { type CarouselApi } from "@/components/Shadui/carousel";
-import { Bounded } from "../../components/layout/Bounded";
+import { type CarouselApi } from "../components/Shadui/carousel";
+import { Bounded } from "../components/layout/Bounded";
 
 const testimonials = [
   {

@@ -1,12 +1,13 @@
 import React from "react";
-import { Bounded } from "../../components/layout/Bounded";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/Shadui/accordion";
+} from "../components/Shadui/accordion";
 import Image from "next/image";
+import { Bounded } from "../components/layout/Bounded";
 
 const statistics = [
   {
@@ -48,7 +49,7 @@ const Steps = () => {
             </div>
           </figure>
           <section className="max-md:pb-8 ">
-            <div className=" space-y-1 max-md:text-center pb-6 ">
+            <div className=" space-y-1 max-md:text-center pb-8">
               <h6 className="md:text-lg text-Orange">How it works</h6>
               <h2 className="font-medium text-3xl md:text-4xl lg:text-5xl text-text-black ">
                 3 Simple Steps
@@ -103,7 +104,7 @@ const Steps = () => {
               src="/step1.jpeg"
               className="h-full w-full object-cover object-center rounded-xl "
             />
-            <div className="flex  justify-between items-center divide-x-2  w-full py-1 px-2 rounded-b-xl text-white bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 ">
+            <div className="flex  justify-between items-center divide-x-2  w-full py-2 px-2 rounded-b-xl text-white bg-white/95 backdrop-blur-sm absolute bottom-0 left-0 ">
               {statistics.map((stat, index) => (
                 <div key={index} className="text-center w-1/3 py-1">
                   <span className="block text-text-black text-2xl leading-none font-semibold font-DM_serif tracking-wider">

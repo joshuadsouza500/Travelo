@@ -77,7 +77,7 @@ const NavBar = () => {
           <div className="dropdown-content ">
             <ul
               tabIndex={0}
-              className=" text-xl   z-[1] menu p-2  shadow bg-background text-background2 font-medium rounded-box w-44 "
+              className=" text-xl   z-[1] menu p-2  shadow bg-background text-background2 font-semibold rounded-box w-44 "
             >
               <li className="">
                 <Link href="#Home">Home</Link>
@@ -108,11 +108,11 @@ const NavBar = () => {
         </div>
 
         <nav className=" hidden md:flex justify-between items-center  ">
-          <ul className="flex flex-row justify-around gap-4  mr-2  text-lg font-medium text-background2 ">
+          <ul className="flex flex-row justify-around gap-5  mr-2  text-lg font-semibold text-background2 ">
             <li>
               <Link
                 href="#Home"
-                className="hover:border-b font-medium hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+                className="hover:border-b font-semibold hover:border-black transition-all duration-300 ease-in-out  hover:border-solid scroll-smooth"
               >
                 Home
               </Link>
@@ -120,7 +120,7 @@ const NavBar = () => {
             <li>
               <Link
                 href="#About"
-                className="hover:border-b font-medium hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+                className="hover:border-b font-semibold hover:border-black transition-all duration-300 ease-in-out  hover:border-solid scroll-smooth"
               >
                 About
               </Link>
@@ -128,7 +128,7 @@ const NavBar = () => {
             <li>
               <Link
                 href="#Services"
-                className="hover:border-b font-medium hover:border-black transition-all duration-300 ease-in-out hover:font-semibold hover:border-solid scroll-smooth"
+                className="hover:border-b font-semibold hover:border-black transition-all duration-300 ease-in-out  hover:border-solid scroll-smooth"
               >
                 Services
               </Link>
