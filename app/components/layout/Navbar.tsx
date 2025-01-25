@@ -135,7 +135,7 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
-        <button className="block group  border-zinc-800 text-sm text-background rounded-full px-3 py-1.5  md:px-3 md:py-2  bg-gradient-to-br shadow-sm from-black to-zinc-900 hover:border-white">
+        <button className="block group  border-zinc-800 text-xs md:text-sm text-background rounded-full px-3 py-1.5  md:px-3 md:py-2  bg-gradient-to-br shadow-sm from-black to-zinc-900 hover:border-white">
           <Link href="/contact" className="  flex items-center">
             Book Now
             <ArrowUpRight className="hidden md:block ml-2 size-4 group-hover:rotate-45  transition-transform bg-white text-black rounded-full " />
