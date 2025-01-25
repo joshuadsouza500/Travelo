@@ -22,33 +22,37 @@ const Hero = () => {
         >
           The Best Place to Start Your Adventure
         </MotionDiv>
-        <span className=" inline-block overflow-hidden pb-1">
-          <Motionh1
-            className="  text-white text-4xl md:text-6xl  xl:text-7xl leading-tight md:leading-none text-center pb-1  "
-            initial={{ y: "200%", opacity: 0.8 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              delay: 0.2,
-              duration: 0.6,
-            }}
-            viewport={{ once: true }}
-          >
-            Escape the Ordinary,
-          </Motionh1>
-
-          <Motionh1
-            className="  text-white text-4xl md:text-6xl  xl:text-7xl leading-tight md:leading-none text-center pb-1  "
-            initial={{ y: "100%", opacity: 0.8 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.6,
-            }}
-            viewport={{ once: true }}
-          >
-            Book your Adventure Now
-          </Motionh1>
-        </span>
+        <div className="flex flex-col text-center">
+          <span className=" inline-block overflow-hidden pb-1">
+            <Motionh1
+              className="  text-white text-4xl md:text-6xl  xl:text-7xl leading-tight md:leading-none  pb-1  "
+              initial={{ y: "100%", opacity: 0.8 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                duration: 0.6,
+              }}
+              viewport={{ once: true }}
+            >
+              Escape the Ordinary,
+            </Motionh1>
+          </span>
+          <span className=" inline-block overflow-hidden pb-1">
+            {" "}
+            <Motionh1
+              className="  text-white text-4xl md:text-6xl  xl:text-7xl leading-tight md:leading-none text-center pb-1  "
+              initial={{ y: "100%", opacity: 0.8 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{
+                delay: 0.3,
+                duration: 0.6,
+              }}
+              viewport={{ once: true }}
+            >
+              Book your Adventure Now
+            </Motionh1>
+          </span>
+        </div>
       </div>
       <div className="  h-auto  absolute left-1/2 -bottom-36  md:-bottom-10 transform -translate-x-1/2  rounded-3xl z-10 w-[90%] 2xl:w-[70%] ">
         <TravelSearch />

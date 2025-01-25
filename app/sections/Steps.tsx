@@ -104,13 +104,13 @@ const Steps = () => {
               src="/step1.jpeg"
               className="h-full w-full object-cover object-center rounded-xl "
             />
-            <div className="flex  justify-between items-center divide-x-2  py-2   rounded-xl text-white bg-white/95 backdrop-blur-sm absolute bottom-1.5 left-1.5 w-[97%] ">
+            <div className="flex  justify-between items-center divide-x-2  py-2   rounded-xl  bg-white/95 backdrop-blur-sm absolute bottom-1.5 left-1.5 w-[97%] ">
               {statistics.map((stat, index) => (
                 <div key={index} className="text-center w-1/3 py-1">
-                  <span className="block text-text-black text-2xl leading-none font-semibold font-DM_serif tracking-wider">
+                  <span className="block text-Orange text-2xl leading-none font-semibold font-DM_serif tracking-wider">
                     {stat.value}
                   </span>
-                  <span className="text-xs text-black/70">{stat.label}</span>
+                  <span className="text-xs text-black/70 ">{stat.label}</span>
                 </div>
               ))}
             </div>

@@ -69,8 +69,8 @@ export function TravelSearch() {
           <PopoverContent className="w-auto p-0" align="start">
             <Calendar
               mode="single"
-              selected={date}
               onSelect={setDate}
+              selected={date}
               autoFocus
               disabled={(date) =>
                 date < new Date() || date > addDays(new Date(), 120)
