@@ -8,18 +8,19 @@ import {
 } from "../components/Shadui/accordion";
 import Image from "next/image";
 import { Bounded } from "../components/layout/Bounded";
+import AnimatedCounter from "../components/ui/AnimatedCounter";
 
 const statistics = [
   {
-    value: "4+",
+    value: 4,
     label: "years of experience",
   },
   {
-    value: "200+",
+    value: 200,
     label: "Happy Clients",
   },
   {
-    value: "100+",
+    value: 100,
     label: "Destinations",
   },
 ];
@@ -41,7 +42,7 @@ const Steps = () => {
               {statistics.map((stat, index) => (
                 <div key={index} className="text-center w-1/3">
                   <span className="block text-Orange text-3xl leading-tight font-semibold font-DM_serif tracking-wider">
-                    {stat.value}
+                    <AnimatedCounter from={0} to={stat.value} />+
                   </span>
                   <span className="text-xs text-black/70 ">{stat.label}</span>
                 </div>
@@ -108,7 +109,7 @@ const Steps = () => {
               {statistics.map((stat, index) => (
                 <div key={index} className="text-center w-1/3 py-1">
                   <span className="block text-Orange text-2xl leading-none font-semibold font-DM_serif tracking-wider">
-                    {stat.value}
+                    <AnimatedCounter from={0} to={stat.value} />+
                   </span>
                   <span className="text-xs text-black/60 ">{stat.label}</span>
                 </div>
