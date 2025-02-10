@@ -33,7 +33,7 @@ export function TravelSearch() {
       <div className="pt-3 py-2 px-3 md:px-4 md:py-4 xl:py-6   flex-1 ">
         <Select>
           <SelectTrigger className="w-full ">
-            <div className="flex md:font-medium items-center gap-2 xl:gap-3 font-DM_sans">
+            <div className="flex font-medium items-center gap-2 xl:gap-3 font-DM_sans">
               <MapPinIcon className="size-4 xl:size-5  text-Orange" />
               <SelectValue placeholder="Where are you going?" />
             </div>
@@ -59,7 +59,7 @@ export function TravelSearch() {
                 !date && "text-muted-foreground "
               )}
             >
-              <div className="flex items-center text-text-black md:font-medium">
+              <div className="flex items-center text-text-black font-medium">
                 <CalendarIcon className="mr-2 xl:mr-3 size-4 md:size-5 text-Orange" />
                 {date ? format(date, "PPP") : "When"}
               </div>
@@ -84,7 +84,7 @@ export function TravelSearch() {
       <div className="py-2 px-3 md:px-4 md:py-4 xl:py-6 flex-1 ">
         <Select value={guests} onValueChange={setGuests}>
           <SelectTrigger className="w-full">
-            <div className="flex items-center gap-2 xl:gap-3 md:font-medium">
+            <div className="flex items-center gap-2 xl:gap-3 font-medium">
               <Users className="size-4 md:size-5 text-Orange" />
               <SelectValue placeholder="Number of guests" />
             </div>

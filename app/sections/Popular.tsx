@@ -6,7 +6,7 @@ import TourCarousel from "../components/ui/TourCarousel";
 
 const Popular = () => {
   return (
-    <div className="h-auto bg-[url('/lines.jpeg')]/10 pt-16 2xl:pt-24 pb-14  xl:pb-16    bg-center bg-cover ">
+    <div className="h-auto bg-[url('/lines.jpeg')]/10 pt-16  pb-14  xl:pb-16    bg-center bg-cover ">
       <Bounded>
         <div className="w-full flex justify-center md:justify-between items-end pb-4 md:pb-6">
           <div className=" space-y-1 max-md:text-center">
