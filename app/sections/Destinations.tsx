@@ -5,8 +5,8 @@ import Button from "../components/Shadui/Button";
 
 const Destinations = () => {
   return (
-    <Bounded className="h-auto   pt-2 md:pt-16  pb-10  xl:pb-16  xl:space-y-4">
-      <div className="w-full flex justify-center md:justify-between items-end pb-4 ">
+    <Bounded className="h-auto   pt-2 md:pt-16  pb-10  xl:pb-16  xl:space-y-4 ">
+      <div className="w-full flex justify-center md:justify-between items-end pb-4  ">
         <div className=" space-y-1 max-md:text-center ">
           <h6 className="md:text-lg text-Orange">Best location</h6>
           <h2 className="font-medium text-3xl md:text-4xl lg:text-5xl text-text-black ">
@@ -17,7 +17,7 @@ const Destinations = () => {
           Explore some of the most booked and toured packages in our collection
         </p>
       </div>
-      <section className="flex  flex-col  gap-6 lg:gap-5 mx-2 lg:mx-10 2xl:mx-20 pt-10 lg:pt-12 cursor-pointer">
+      <section className="flex  flex-col  gap-6 lg:gap-5 mx-2 lg:mx-10 2xl:mx-10 pt-10 lg:pt-12 cursor-pointer ">
         <div className="flex max-sm:flex-col  w-full  max-sm:h-[75vh] max-md:h-[55vh] md:min-h-64 xl:min-h-80 gap-6 lg:gap-5  ">
           <div className="bg-[url('/destination/Bromo.jpeg')] bg-no-repeat bg- bg-cover group rounded-xl shadow-xl basis-full sm:basis-[60%] relative ">
             {" "}

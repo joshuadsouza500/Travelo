@@ -28,8 +28,8 @@ const Steps = () => {
   return (
     <div className="h-auto  pt-1 md:pt-16  pb-10  xl:pb-16    bg-center bg-cover   ">
       <Bounded>
-        <div className="w-full grid  md:grid-cols-2  md:justify-between   items-start gap-x-4 lg:gap-x-8 2xl:gap-x-28 pb-4">
-          <figure className=" hidden md:block rounded-xl h-[450px] max-2xl:mx-auto 2xl:place-self-end w-full lg:w-[85%] 2xl:w-[80%]  shadow-xl relative ">
+        <div className="w-full grid  md:grid-cols-2  md:justify-between    items-start gap-x-4 lg:gap-x-8  pb-4 ">
+          <figure className=" hidden md:block rounded-xl h-[450px] max-2xl: mx-auto 2xl:place-self-center w-full lg:w-[85%] 2xl:w-[90%] 2xl:h-[500px]  shadow-xl relative  ">
             <Image
               alt="Traveler"
               height={400}
@@ -44,13 +44,15 @@ const Steps = () => {
                   <span className="block text-Orange text-3xl leading-tight font-semibold font-DM_serif tracking-wider">
                     <AnimatedCounter from={0} to={stat.value} />+
                   </span>
-                  <span className="text-xs text-black/70 ">{stat.label}</span>
+                  <span className="text-xs text-black/70 capitalize ">
+                    {stat.label}
+                  </span>
                 </div>
               ))}
             </div>
           </figure>
-          <section className="max-md:pb-8 ">
-            <div className=" space-y-1 max-md:text-center pb-8">
+          <section className="max-md:pb-8 2xl:pt-5">
+            <div className=" space-y-1 max-md:text-center pb-8 2xl:pb-10">
               <h6 className="md:text-lg text-Orange">How it works</h6>
               <h2 className="font-medium text-3xl md:text-4xl lg:text-5xl text-text-black ">
                 3 Simple Steps

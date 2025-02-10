@@ -63,7 +63,7 @@ const TourCarousel = () => {
               alt="Tour package"
               height={400}
               width={400}
-              className=" object-center object-cover  h-full w-full group-hover:scale-105 transition-transform duration-300 xl:aspect-[3/4] aspect-[2.5/3.5]  max-h-[300px] md:max-h-[350px] lg:max-h-[450px]  "
+              className=" object-center object-cover  h-full w-full group-hover:scale-105 transition-transform duration-300 md:aspect-[3/4] aspect-[2.5/3.5]  max-h-[300px] md:max-h-[350px] lg:max-h-[450px]  "
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent rounded-xl" />
             <div className="  text-white p-2   absolute bottom-0 left-0 md:p-4  w-full">
