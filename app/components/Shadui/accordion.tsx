@@ -49,7 +49,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className=" overflow-hidden border-l-4 border-text-black   pt-2 ml-1 md:ml-2 pl-6 lg:pl-10 text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down  tracking-wide md:text-base text-text-black/75 mr-3"
+    className=" overflow-hidden border-l-4 border-text-black   pt-2 ml-1 md:ml-2 pl-6 lg:pl-10 text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down  tracking-wide md:text-base text-text-black/75  lg:w-[90%] w-[95%]"
     {...props}
   >
     <div className={cn("pb-2 xl:pb-5 pt-0", className)}>{children}</div>

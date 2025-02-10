@@ -33,7 +33,7 @@ const blogPosts: BlogPost[] = [
 
 const BlogSection = () => {
   return (
-    <Bounded className="h-auto  py-16 md:py-20  space-y-6 md:space-y-10 xl:space-y-16 font-DM_sans">
+    <Bounded className="h-auto pt-16 pb-10  md:pt-20  space-y-6 md:space-y-10 xl:space-y-16 font-DM_sans">
       <div className="w-full flex justify-center md:justify-between items-end pb-4  ">
         <div className=" space-y-1 max-md:text-center ">
           <h6 className="md:text-lg text-Orange">Our Blog</h6>

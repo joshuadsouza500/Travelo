@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl 2xl:max-w-8xl mx-auto mt-12 pb-4 pt-8 border-t border-white/10 text-center text-sm text-gray-400">
+      <div className="max-w-7xl 2xl:max-w-8xl mx-auto mt-12 pb-4 pt-4 md:pt-8 border-t border-white/10 text-center text-xs md:text-sm text-gray-400">
         © {new Date().getFullYear()} Your Travel Company. All rights reserved
       </div>
     </footer>

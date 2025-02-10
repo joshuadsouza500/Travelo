@@ -15,7 +15,6 @@ export default function Home() {
       <Destinations />
       <Reviews />
       <BlogSection />
-      <div className="w-full h-32 md:h-10 "></div>
     </div>
   );
 }

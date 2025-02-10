@@ -75,7 +75,7 @@ const Steps = () => {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="plan">
-                  <AccordionTrigger className="text-lg md:text-xl lg:text-2xl font-semibold">
+                  <AccordionTrigger className="text-xl lg:text-2xl font-semibold">
                     02/ Select A Tour Plan
                   </AccordionTrigger>
                   <AccordionContent>
@@ -85,8 +85,8 @@ const Steps = () => {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="book">
-                  <AccordionTrigger className="text-lg md:text-xl lg:text-2xl font-semibold">
-                    03/ Book and Enjoy your Adventure
+                  <AccordionTrigger className="text-xl lg:text-2xl font-semibold">
+                    03/ Book your Adventure
                   </AccordionTrigger>
                   <AccordionContent>
                     Book your tour package and get ready to embark on an
