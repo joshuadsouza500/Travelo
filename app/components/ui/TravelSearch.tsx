@@ -33,7 +33,7 @@ export function TravelSearch() {
       <div className="pt-3 py-2 px-3 md:px-4 md:py-4 xl:py-6   flex-1 ">
         <Select>
           <SelectTrigger className="w-full ">
-            <div className="flex items-center gap-2 xl:gap-3 font-DM_sans">
+            <div className="flex md:font-medium items-center gap-2 xl:gap-3 font-DM_sans">
               <MapPinIcon className="size-4 xl:size-5  text-Orange" />
               <SelectValue placeholder="Where are you going?" />
             </div>
@@ -59,7 +59,7 @@ export function TravelSearch() {
                 !date && "text-muted-foreground "
               )}
             >
-              <div className="flex items-center text-text-black">
+              <div className="flex items-center text-text-black md:font-medium">
                 <CalendarIcon className="mr-2 xl:mr-3 size-4 md:size-5 text-Orange" />
                 {date ? format(date, "PPP") : "When"}
               </div>
@@ -84,7 +84,7 @@ export function TravelSearch() {
       <div className="py-2 px-3 md:px-4 md:py-4 xl:py-6 flex-1 ">
         <Select value={guests} onValueChange={setGuests}>
           <SelectTrigger className="w-full">
-            <div className="flex items-center gap-2 xl:gap-3">
+            <div className="flex items-center gap-2 xl:gap-3 md:font-medium">
               <Users className="size-4 md:size-5 text-Orange" />
               <SelectValue placeholder="Number of guests" />
             </div>
@@ -100,9 +100,9 @@ export function TravelSearch() {
       </div>
 
       {/* Search Button */}
-      <div className="p-4 md:bg-Orange   text-white rounded-r-xl md:hover:bg-orange-600 group ">
-        <button className="w-[95%] mx-auto md:w-auto bg-Orange flex items-center justify-center group-hover:bg-orange-600  rounded-md    px-3 lg:px-6 py-2 xl:py-4 font-sans font-medium h z-10 relative  ">
-          <Search className="mr-2 h-4 w-4" /> Search
+      <div className="p-3.5 md:bg-Orange   text-white rounded-r-xl md:hover:bg-orange-600 group ">
+        <button className="w-[95%] mx-auto md:w-auto bg-Orange flex items-center justify-center group-hover:bg-orange-600  rounded-md xl:text-lg    px-3 lg:px-6 py-2 xl:py-4 font-sans font-medium h z-10 relative  ">
+          <Search className="mr-2 size-4 xl:size-5" /> Search
         </button>
       </div>
     </div>
