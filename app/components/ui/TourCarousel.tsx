@@ -45,7 +45,9 @@ const destinations: TourProp[] = [
 ];
 const TourCarousel = () => {
   return (
-    <Carousel>
+    <Carousel opts={{
+    loop: true,
+  }}>
       <CarouselContent className=" pl-4 space-x-4 md:space-x-6 lg:space-x-8">
         {destinations.map((destination, index) => (
           <CarouselItem
