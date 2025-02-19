@@ -35,7 +35,7 @@ const NavBar = () => {
 
   return (
     <motion.nav
-      className="  flex  sm:px-6   px-2 py-2.5 sm:py-3 xl:py-4  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full backdrop-blur-lg items-center  bg-white/30  max-w-7xl xl:max-w-[98%]  transition-all duration-300 ease-in-out"
+      className="  flex  sm:px-6   px-2 py-3 sm:py-3 xl:py-4  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full backdrop-blur-lg items-center  bg-white/30  max-w-7xl xl:max-w-[98%]  transition-all duration-300 ease-in-out"
       variants={{
         hidden: {
           y: -100,
@@ -97,7 +97,7 @@ const NavBar = () => {
         </div>
       </div> */}
       <div className="flex justify-between items-center w-full">
-        <div className="flex   gap-x-1  items-center ">
+        <div className="flex   gap-x-1.5  items-center ">
           <Image alt="logo" height={20} width={20} src="/Logo.svg" />
           <Link
             href="/"
