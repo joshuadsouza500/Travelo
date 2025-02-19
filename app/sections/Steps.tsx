@@ -13,7 +13,7 @@ import AnimatedCounter from "../components/ui/AnimatedCounter";
 const statistics = [
   {
     value: 4,
-    label: "years of experience",
+    label: "Years of Experience",
   },
   {
     value: 200,
