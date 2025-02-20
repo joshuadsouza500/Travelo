@@ -35,7 +35,7 @@ const NavBar = () => {
 
   return (
     <motion.nav
-      className="  flex  sm:px-6   px-2 py-3 sm:py-3 xl:py-4  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full backdrop-blur-lg items-center  bg-white/30  max-w-7xl xl:max-w-[98%]  transition-all duration-300 ease-in-out"
+      className="  flex  sm:px-6   px-3 py-3 sm:py-3 xl:py-4  mx-auto  z-20  sticky top-0.5 mb-1 rounded-full backdrop-blur-lg items-center  bg-white/30  max-w-7xl xl:max-w-[98%]  transition-all duration-300 ease-in-out"
       variants={{
         hidden: {
           y: -100,
