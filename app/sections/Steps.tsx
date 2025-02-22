@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import { Bounded } from "../components/layout/Bounded";
 import AnimatedCounter from "../components/ui/AnimatedCounter";
-
+{/*Changed years of expierence to years active *}
 const statistics = [
   {
     value: 4,
