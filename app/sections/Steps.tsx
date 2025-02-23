@@ -29,7 +29,7 @@ const Steps = () => {
     <div className="h-auto  pt-1 md:pt-16  pb-10  xl:pb-16    bg-center bg-cover   ">
       <Bounded>
         <div className="w-full grid  md:grid-cols-2  md:justify-between    items-start gap-x-4 lg:gap-x-8  pb-4 ">
-          <figure className=" hidden md:block rounded-xl h-[450px] max-2xl: mx-auto 2xl:place-self-center w-full lg:w-[85%] 2xl:w-[90%] 2xl:h-[500px]  shadow-xl relative  ">
+          <figure className=" hidden md:block rounded-xl h-[450px] max-2xl:mx-auto 2xl:place-self-center w-full lg:w-[85%] 2xl:w-[988%] 2xl:h-[500px]  shadow-xl relative  ">
             <Image
               alt="Traveler"
               height={400}
