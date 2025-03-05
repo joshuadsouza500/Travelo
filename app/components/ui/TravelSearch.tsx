@@ -27,7 +27,7 @@ export function TravelSearch() {
   const [guests, setGuests] = React.useState("1");
 
   return (
-    <div className="flex flex-col md:flex-row md:items-center md:divide-x rounded-xl border   shadow-sm w-full bg-white  font-DM_sans">
+    <div className="flex flex-col md:flex-row md:items-center md:divide-x rounded-xl border   shadow-sm w-full bg-white  font-DM_serif">
       {/*divide-x is used to apply a horizontal dividing line between children */}
       {/* Destination Select */}
       <div className="pt-3 py-2 px-3 md:px-4 md:py-4 xl:py-6   flex-1 ">

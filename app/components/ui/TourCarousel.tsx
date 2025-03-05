@@ -45,9 +45,11 @@ const destinations: TourProp[] = [
 ];
 const TourCarousel = () => {
   return (
-    <Carousel opts={{
-    loop: true,
-  }}>
+    <Carousel
+      opts={{
+        loop: true,
+      }}
+    >
       <CarouselContent className=" pl-4 space-x-4 md:space-x-6 lg:space-x-8">
         {destinations.map((destination, index) => (
           <CarouselItem
@@ -55,7 +57,7 @@ const TourCarousel = () => {
             className="relative basis-1/2 md:basis-1/3 2xl:basis-1/4  rounded-xl overflow-hidden group   shadow-md"
           >
             <div className=" bg-white/30 backdrop-blur-lg rounded-full  px-2 md:px-3 py-0.5 md:py-1   absolute top-4 right-2  flex items-center gap-x-1 md:gap-x-1.5 z-10 shadow-sm">
-              <Star className="text-yellow-500 fill-yellow-500 size-3.5 md:size-4 " />
+              <Star className="text-yellow-500 fill-yellow-400 size-3.5 md:size-4 " />
               <h6 className="max-md:text-sm font-medium  text-white">
                 {destination.rating}
               </h6>
@@ -63,7 +65,7 @@ const TourCarousel = () => {
             <Image
               src={destination.image}
               alt="Tour package"
-              height={400}
+              height={500}
               width={400}
               className=" object-center object-cover  h-full w-full group-hover:scale-105 transition-transform duration-300 md:aspect-[3/4] aspect-[2.5/3.5]  max-h-[300px] md:max-h-[350px] lg:max-h-[450px]  "
             />
