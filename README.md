@@ -1,7 +1,7 @@
 # Travelo
 
 This is a responsive web application built using **Next.js** designed to help you discover, plan, and enjoy your travels.
-### Live site: https://travelo-bh.vercel.app/
+##### Live site: https://travelo-bh.vercel.app/
 ## Features
 
 - **Responsive Design**: Optimized for mobile and desktop devices to ensure a seamless browsing experience.
